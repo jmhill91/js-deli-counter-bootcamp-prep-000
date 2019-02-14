@@ -5,6 +5,13 @@ function takeANumber(katzDeliLine,name){
   var response= "Welcome, "+name+". You are number "+position+" in line.";
   return response
 }
+var num=0
+function takeANumber2(katzDeliLine){
+  katzDeliLine.push(num+1);
+  num++
+  return `Welcome number ${num}.`
+}
+
 
 function nowServing(katzDeliLine){
  if(0===katzDeliLine.length) {
